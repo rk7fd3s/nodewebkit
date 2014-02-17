@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>SC-PORTAL JS/CSS DevelopEnvironment Setting</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      #splash, #main {
+        margin: 0 auto;
+        width: 500px;
+      }
+      #splash {
+        text-align: center;
+        cursor: pointer;
+      }
+      #main {
+        border: 1px solid #E48632;
+        border-radius: 6px;
+      }
+      #main.error {
+        border-color: #EB0D0D;
+      }
+      #main p {
+        margin: 0;
+        padding: .2em .4em;
+        background-color: #E48632;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      #main.error p {
+        background-color: #EB0D0D;
+      }
+      #main > div#message {
+        margin: 0;
+        padding: .4em .4em;
+        min-height: 5em;
+      }
+      #main > div#message > pre {
+        font-size: .8em;
+      }
+      #main > div#btns {
+        margin: 0;
+        text-align: right;
+      }
+      .btn {
+        margin: .2em;
+        display: inline-block;
+        font-size: 1em;
+        cursor: pointer;
+        color: #111;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.5);
+        letter-spacing: 0;
+        border: none;
+        box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        text-decoration: none;
+        padding: .2em .6em;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #bdbbbb), color-stop(1.00, #777));
+        background: -moz-linear-gradient(#bdbbbb, #777);
+        background: -ms-linear-gradient(#bdbbbb, #777);
+        background: linear-gradient(#bdbbbb, #777);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SC-PORTAL JS/CSS<br>DevelopEnvironment Setting</h1>
+    </header>
+    <div id="splash" style="display: block;">
+      <img src="./img/sclogo.png" style="width: 50%;" alt="Click me !" /><br>
+      Click and start !
+    </div>
+    <div id="main" style="display: none;">
+      <p id="title">grunt</p>
+      <div id="message">
+        install checking......
+      </div>
+      <div id="btns" style="display: none;">
+        <button class="btn" id="actionBtn">Checking...</button>
+      </div>
+    </div>
+  </body>
+</html>

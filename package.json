@@ -1,0 +1,11 @@
+{
+  "name": "nw-apps",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start" : "node_modules/nodewebkit/bin/nodewebkit"
+  },
+  "author": "",
+  "license": "BSD"
+}
